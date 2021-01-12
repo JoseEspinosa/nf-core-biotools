@@ -1,0 +1,266 @@
+{
+    "name": "nf-core-sarek",
+    "description": "Sarek is a workflow designed to detect variants on whole genome or targeted sequencing data. Initially designed for Human, and Mouse, it can work on any species with a reference genome. Sarek can also handle tumour / normal pairs and could include additional relapses.\n\nIt's built using Nextflow, a workflow tool to run tasks across multiple compute infrastructures in a very portable manner. It comes with docker containers making installation trivial and results highly reproducible.",
+    "homepage": "https://nf-co.re/sarek",
+    "biotoolsID": "nf-core-sarek",    
+    "version": [
+        "2.0.0",
+        "2.1.0",
+        "2.2.0",
+        "2.2.1",
+        "2.2.2",
+        "2.3",
+        "2.3.FIX1",
+        "2.5",
+        "2.5.1",
+        "2.5.2",
+        "2.6",
+        "2.6.1"
+    ],    
+    "relation": [
+        {
+            "biotoolsID": "caw",
+            "type": "isNewVersionOf"
+        },
+        {
+        "type": "isNewVersionOf",
+        "biotoolsID": "sarek"
+        }
+    ],
+    "function": [
+        {
+            "operation": [
+                {
+                    "uri": "http://edamontology.org/operation_3731",
+                    "term": "Sample comparison"
+                },
+                {
+                    "uri": "http://edamontology.org/operation_0361",
+                    "term": "Sequence annotation"
+                },
+                {
+                    "uri": "http://edamontology.org/operation_3227",
+                    "term": "Variant calling"
+                }
+            ],
+            "input": [
+                {
+                    "data": {
+                        "uri": "http://edamontology.org/data_3497",
+                        "term": "DNA sequence (raw)"
+                    },
+                    "format": [
+                        {
+                            "uri": "http://edamontology.org/format_1930",
+                            "term": "FASTQ"
+                        }
+                    ]
+                },
+                {
+                    "data": {
+                        "uri": "http://edamontology.org/data_3494",
+                        "term": "DNA sequence"
+                    },
+                    "format": [
+                        {
+                            "uri": "http://edamontology.org/format_2572",
+                            "term": "BAM"
+                        }
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "data": {
+                        "uri": "http://edamontology.org/data_3498",
+                        "term": "Sequence variations"
+                    },
+                    "format": [
+                        {
+                            "uri": "http://edamontology.org/format_3016",
+                            "term": "VCF"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "toolType": [
+        "Command-line tool",
+        "Workflow"
+    ],
+    "topic": [
+        {
+            "uri": "http://edamontology.org/topic_2640",
+            "term": "Oncology"
+        },
+        {
+            "uri": "http://edamontology.org/topic_0622",
+            "term": "Genomics"
+        },
+        {
+            "uri": "http://edamontology.org/topic_3673",
+            "term": "Whole genome sequencing"
+        },
+        {
+            "uri": "http://edamontology.org/topic_0769",
+            "term": "Workflows"
+        }
+    ],
+    "operatingSystem": [
+        "Linux"
+    ],
+    "language": [
+        "Groovy"
+    ],
+    "license": "MIT",
+    "collectionID": [
+        "nf-core"
+    ],
+    "maturity": "Mature",    
+    "accessibility": "Open access",
+    "link": [
+        {
+            "url": "https://github.com/nf-core/sarek",
+            "type": [
+                "Repository"
+            ],
+            "note": "Github Repository"
+        },
+        {
+            "url": "https://nfcore.slack.com/channels/sarek",
+            "type": [
+                "Social media"
+            ],
+            "note": "Slack channel"
+        }
+    ],
+    "download": [
+        {
+            "url": "https://github.com/nf-core/sarek/releases/tag/2.6.1",
+            "type": "Source code",
+            "note": "Release 2.6.1",
+            "version": "2.6.1"
+        }
+    ],
+    "documentation": [
+        {
+            "url": "https://nf-co.re/sarek",
+            "type": [
+                "General"
+            ] 
+        },
+        {
+            "url": "https://nf-co.re/sarek/usage",
+            "type": [
+                "User manual"
+            ]
+        },
+        {
+            "url": "https://nf-co.re/usage/installation",
+            "type": [
+                "Installation instructions"
+            ]            
+        },
+        {
+            "url": "https://github.com/nf-core/sarek/blob/master/LICENSE",
+            "type": [
+                "Terms of use"
+            ]            
+        }
+    ],
+    "publication": [        
+        {
+            "doi": "10.12688/f1000research.16665.1",
+            "pmid": "32269765",
+            "pmcid": "PMC7111497",
+            "type": [
+                "Primary"
+            ]            
+        },
+        {
+            "doi": "10.1101/316976",
+            "type": [
+                "Other"
+            ],            
+            "note": "F1000 article preprint on BioRxiv"            
+        },
+        {
+            "doi": "10.1038/s41587-020-0439-x",
+            "pmid": "32055031",            
+            "type": [
+                "Other"
+            ],
+            "note": "This is the publication about the nf-core framework"
+        }
+    ],
+    "credit": [
+        {
+            "name": "Maxime U. Garcia",
+            "email": "maxime.garcia@scilifelab.se",
+            "url": "https://maxulysse.github.io/",
+            "orcidid": "https://orcid.org/0000-0003-2827-9261",
+            "typeEntity": "Person",
+            "typeRole": [
+                "Primary contact",
+                "Developer",
+                "Maintainer"
+            ]
+        },
+        {
+            "name": "Szilvester Juhos",
+            "email": "szilveszter.juhos@scilifelab.se",
+            "typeEntity": "Person",
+            "typeRole": [
+                "Primary contact",
+                "Developer",
+                "Maintainer"
+            ]
+        },
+        {
+            "name": "Science for Life Laboratory - SciLifeLab",
+            "url": "https://www.scilifelab.se/",
+            "typeEntity": "Institute"
+        },
+        {
+            "name": "National Genomics Infrastructure - NGI",
+            "url": "https://ngisweden.scilifelab.se/",
+            "typeEntity": "Division"
+        },
+        {
+            "name": "National Bioinformatics Infrastructure Sweden - NBIS",
+            "url": "https://nbis.se/",
+            "typeEntity": "Division"
+        },
+        {
+            "name": "Barntumörbanken",
+            "url": "https://ki.se/forskning/barntumorbanken",
+            "typeEntity": "Institute"
+        },
+        {
+            "name": "Quantitative Biology Center - QBiC",            
+            "url": "https://www.qbic.uni-tuebingen.de/",
+            "typeEntity": "Institute"
+        },
+        {
+            "name": "nf-core",
+            "url": "https://nf-co.re",
+            "typeEntity": "Consortium"                      
+        }
+    ],    
+    "owner": "nf-core",    
+    "editPermission": {
+        "type": "group",
+        "authors": [
+            "MaxUlysse",
+            "malinlarsson",
+            "szilva",
+            "fhanssen",
+            "JoseEspinosa",
+            "ewels"            
+        ]
+    },
+    "validated": 0,
+    "homepage_status": 0,
+    "elixir_badge": 0    
+}
