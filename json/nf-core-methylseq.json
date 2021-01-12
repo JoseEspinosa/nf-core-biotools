@@ -1,0 +1,238 @@
+{
+    "name": "nf-core-methylseq",
+    "description": "nf-core/methylseq is a bioinformatics analysis pipeline used for Methylation (Bisulfite) sequencing data. It pre-processes raw data from FastQ inputs, aligns the reads and performs extensive quality-control on the results.",
+    "homepage": "https://nf-co.re/methylseq",
+    "biotoolsID": "nf-core-methylseq",    
+    "version": [
+        "1.0",
+        "1.1",
+        "1.2",
+        "1.3",
+        "1.4",
+        "1.5"                       
+    ],
+    "otherID": [
+        {
+            "type": "doi",
+            "version": "1.5",
+            "value": "DOI:10.5281/zenodo.3746458"
+        }
+    ],    
+    "function": [
+        {
+            "operation": [
+                {
+                    "term": "Bisulfite mapping",
+                    "uri": "http://edamontology.org/operation_3186"
+                },
+                {
+                    "term": "Methylation calling",
+                    "uri": "http://edamontology.org/operation_3919"
+                }
+            ],
+            "input": [
+                {
+                    
+                    "data": {
+                    "term": "DNA sequence",
+                    "uri": "http://edamontology.org/data_3494"
+                    },
+                    "format": [
+                        {
+                            "uri": "http://edamontology.org/format_1930",
+                            "term": "FASTQ"
+                        }
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "data": {
+                        "term": "Nucleic acid sequence alignment",
+                        "uri": "http://edamontology.org/data_1383"
+                    },
+                    "format": [
+                        {
+                          "term": "BAM",
+                          "uri": "http://edamontology.org/format_2572"
+                        },
+                        {
+                          "term": "BAI",
+                          "uri": "http://edamontology.org/format_3327"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "toolType": [
+        "Command-line tool",
+        "Workflow"
+    ],
+    "topic": [
+        {
+            "uri": "http://edamontology.org/topic_0622",
+            "term": "Genomics"
+        },
+        {
+            "term": "ChIP-seq",
+            "uri": "http://edamontology.org/topic_3169"
+        },      
+        {
+            "term": "Epigenetics",
+            "uri": "http://edamontology.org/topic_3295"
+        },  
+        {
+            "uri": "http://edamontology.org/topic_0769",
+            "term": "Workflows"
+        }
+    ],
+    "operatingSystem": [
+        "Linux"
+    ],
+    "language": [
+        "Groovy"
+    ],
+    "license": "MIT",
+    "collectionID": [
+        "nf-core",
+        "RIS3CAT VEIS"
+    ],
+    "maturity": "Mature",
+    "cost": "Free of charge",
+    "accessibility": "Open access",    
+    "link": [
+        {
+            "url": "https://github.com/nf-core/methylseq",
+            "type": [
+                "Repository"
+            ],
+            "note": "Github Repository"
+        },
+        {
+            "url": "https://nfcore.slack.com/channels/methylseq",
+            "type": [
+                "Social media"
+            ],
+            "note": "Slack channel"
+        }
+    ],
+    "download": [
+        {
+            "url": "https://github.com/nf-core/methylseq/releases/tag/1.5",
+            "type": "Source code",
+            "note": "Release 1.5",
+            "version": "1.5"
+        }
+    ],
+    "documentation": [
+        {
+            "url": "https://nf-co.re/methylseq",
+            "type": [
+                "General"
+            ]
+        },
+        {
+            "url": "https://nf-co.re/methylseq/usage",
+            "type": [
+                "User manual"
+            ]
+        },
+        {
+            "url": "https://github.com/nf-core/methylseq/blob/master/LICENSE",
+            "type": [
+                "Terms of use"
+            ]
+        }
+    ],
+    "publication": [
+        {
+          "doi": "10.1038/s41587-020-0439-x",
+          "type": [
+            "Primary"
+          ],
+          "note": "nf-core framework publication",          
+          "pmid": "32055031"
+        }
+    ],
+    "credit": [        
+        {
+            "name": "Philip A. Ewels",
+            "email": "phil.ewels@scilifelab.se",
+            "url": "https://phil.ewels.co.uk/",
+            "orcidid": "https://orcid.org/0000-0003-4101-2502",            
+            "typeEntity": "Person",
+            "typeRole": [
+                "Primary contact",
+                "Developer",
+                "Maintainer"
+            ]
+        },                      
+        {
+            "name": "Rickard Hammaren",            
+            "orcidid": "https://orcid.org/0000-0001-9017-591X",            
+            "typeEntity": "Person",
+            "typeRole": [
+                "Developer"
+            ]
+        },
+        {
+            "name": "Alexander Peltzer",
+            "email": "Harshil.Patel@crick.ac.uk",            
+            "orcidid": "http://orcid.org/0000-0002-6503-2180",            
+            "typeEntity": "Person",
+            "typeRole": [
+                "Primary contact",
+                "Developer",
+                "Maintainer"
+            ]
+        },
+        {
+            "name": "Patrick Hüther",                        
+            "orcidid": "https://orcid.org/0000-0003-3315-2484",            
+            "typeEntity": "Person",
+            "typeRole": [
+                "Primary contact",
+                "Developer",
+                "Maintainer"
+            ]
+        },  
+        {
+            "name": "Maxime U. Garcia",
+            "email": "maxime.garcia@scilifelab.se",
+            "url": "https://maxulysse.github.io/",
+            "orcidid": "https://orcid.org/0000-0003-2827-9261",            
+            "typeEntity": "Person",
+            "typeRole": [
+                "Primary contact"
+            ]
+        },
+        {
+            "orcidid": "https://orcid.org/0000-0002-1541-042X",
+            "name": "Jose Espinosa-Carrasco",
+            "email": "espinosacarrascoj@gmail.com",
+            "typeEntity": "Person",
+            "typeRole": [
+              "Primary contact"
+            ]
+        },    
+        {
+            "name": "nf-core",            
+            "url": "https://nf-co.re",            
+            "typeEntity": "Consortium"
+        }
+    ],    
+    "owner": "nf-core", 
+    "editPermission": {
+        "type": "group",
+        "authors": [
+            "nf-core",
+            "MaxUlysse",               
+            "JoseEspinosa",
+            "ewels"
+        ]
+    },
+    "validated": 0,
+    "homepage_status": 0,
+    "elixir_badge": 0
+}
