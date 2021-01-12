@@ -1,2 +1,3 @@
 # nf-core-biotools
-Repository to keep all JSON files uploaded to the biotools portal
+
+Repository to keep all JSON files use to upload the nf-core workflows to the biotools portal.

@@ -1,0 +1,242 @@
+{
+    "name": "nf-core-chipseq",
+    "description": "nf-core/chipseq is a bioinformatics analysis pipeline used for RNA sequencing data.",
+    "homepage": "https://nf-co.re/chipseq",
+    "biotoolsID": "nf-core-chipseq",    
+    "version": [
+        "1.0.0",
+        "1.1.0",
+        "1.2.0",
+        "1.2.1"                
+    ],
+    "otherID": [
+        {
+            "type": "doi",
+            "version": "1.2.1",
+            "value": "DOI:10.5281/zenodo.3966161"
+        }
+    ],    
+    "function": [
+        {
+            "operation": [                
+                {
+                    "term": "RNA-Seq analysis",
+                    "uri": "http://edamontology.org/operation_3680"                    
+                },
+                {
+                    "term": "RNA-Seq quantification",
+                    "uri": "http://edamontology.org/operation_3800"
+                },
+                {                    
+                    "term": "Sample comparison",
+                    "uri": "http://edamontology.org/operation_3731"
+                }
+            ],
+            "input": [
+                {
+                    "data": {
+                        "term": "RNA sequence",
+                        "uri": "http://edamontology.org/data_3495"                        
+                    },
+                    "format": [
+                        {   
+                            "term": "FASTQ",
+                            "uri": "http://edamontology.org/format_1930"
+                            
+                        }
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "data": {
+                        "term": "Nucleic acid sequence alignment",
+                        "uri": "http://edamontology.org/data_1383"
+                    },
+                    "format": [
+                        {
+                          "term": "BAM",
+                          "uri": "http://edamontology.org/format_2572"
+                        },
+                        {
+                          "term": "BAI",
+                          "uri": "http://edamontology.org/format_3327"
+                        }
+                    ]
+                },
+                {
+                    "data": {
+                      "term": "Gene transcript report",
+                      "uri": "http://edamontology.org/data_3134"
+                    },
+                    "format": [
+                      {
+                        "term": "TSV",
+                        "uri": "http://edamontology.org/format_3475"
+                      }
+                    ]
+                }
+            ]
+        }
+    ],
+    "toolType": [
+        "Command-line tool",
+        "Workflow"
+    ],
+    "topic": [
+        {
+            "uri": "http://edamontology.org/topic_0622",
+            "term": "Genomics"
+        },
+        {
+            "term": "RNA-Seq",
+            "uri": "http://edamontology.org/topic_3170"
+        },        
+        {
+            "term": "Transcriptomics",
+            "uri": "http://edamontology.org/topic_3308"
+        },  
+        {
+            "uri": "http://edamontology.org/topic_0769",
+            "term": "Workflows"
+        }
+    ],
+    "operatingSystem": [
+        "Linux"
+    ],
+    "language": [
+        "Groovy"
+    ],
+    "license": "MIT",
+    "collectionID": [
+        "nf-core",
+        "RIS3CAT VEIS"
+    ],
+    "maturity": "Mature",
+    "cost": "Free of charge",
+    "accessibility": "Open access",    
+    "link": [
+        {
+            "url": "https://github.com/nf-core/rnaseq",
+            "type": [
+                "Repository"
+            ],
+            "note": "Github Repository"
+        },
+        {
+            "url": "https://nfcore.slack.com/channels/rnaseq",
+            "type": [
+                "Social media"
+            ],
+            "note": "Slack channel"
+        }
+    ],
+    "download": [
+        {
+            "url": "https://github.com/nf-core/rnaseq/releases/tag/3.0",
+            "type": "Source code",
+            "note": "Release 3.0",
+            "version": "3.0"
+        }
+    ],
+    "documentation": [
+        {
+            "url": "https://nf-co.re/rnaseq",
+            "type": [
+                "General"
+            ]
+        },
+        {
+            "url": "https://nf-co.re/rnaseq/usage",
+            "type": [
+                "User manual"
+            ]
+        },
+        {
+            "url": "https://github.com/nf-core/rnaseq/blob/master/LICENSE",
+            "type": [
+                "Terms of use"
+            ]
+        }
+    ],
+    "publication": [
+        {
+          "doi": "10.1038/s41587-020-0439-x",
+          "type": [
+            "Primary"
+          ],
+          "note": "nf-core framework publication",          
+          "pmid": "32055031"
+        }
+    ],
+    "credit": [        
+        {
+            "name": "Philip A. Ewels",
+            "email": "phil.ewels@scilifelab.se",
+            "url": "https://phil.ewels.co.uk/",
+            "orcidid": "https://orcid.org/0000-0003-4101-2502",            
+            "typeEntity": "Person",
+            "typeRole": [
+                "Primary contact",
+                "Developer",
+                "Maintainer"
+            ]
+        },                      
+        {
+            "name": "Rickard Hammaren",            
+            "orcidid": "https://orcid.org/0000-0001-9017-591X",            
+            "typeEntity": "Person",
+            "typeRole": [
+                "Developer"
+            ]
+        },
+        {
+            "name": "Harshil Patel",
+            "email": "Harshil.Patel@crick.ac.uk",            
+            "orcidid": "https://orcid.org/0000-0003-2707-7940",            
+            "typeEntity": "Person",
+            "typeRole": [
+                "Primary contact",
+                "Developer",
+                "Maintainer"
+            ]
+        },   
+        {
+            "name": "Maxime U. Garcia",
+            "email": "maxime.garcia@scilifelab.se",
+            "url": "https://maxulysse.github.io/",
+            "orcidid": "https://orcid.org/0000-0003-2827-9261",            
+            "typeEntity": "Person",
+            "typeRole": [
+                "Primary contact"
+            ]
+        },
+        {
+            "orcidid": "https://orcid.org/0000-0002-1541-042X",
+            "name": "Jose Espinosa-Carrasco",
+            "email": "espinosacarrascoj@gmail.com",
+            "typeEntity": "Person",
+            "typeRole": [
+              "Primary contact"
+            ]
+        },    
+        {
+            "name": "nf-core",            
+            "url": "https://nf-co.re",            
+            "typeEntity": "Consortium"
+        }
+    ],    
+    "owner": "nf-core", 
+    "editPermission": {
+        "type": "group",
+        "authors": [
+            "nf-core",
+            "MaxUlysse",               
+            "JoseEspinosa",
+            "ewels"
+        ]
+    },
+    "validated": 0,
+    "homepage_status": 0,
+    "elixir_badge": 0
+}
