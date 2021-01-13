@@ -1,0 +1,187 @@
+{
+    "name": "nf-core-hic",
+    "description": "This pipeline is based on the HiC-Pro workflow. It was designed to process Hi-C data from raw FastQ files (paired-end Illumina data) to normalized contact maps. The current version supports most protocols, including digestion protocols as well as protocols that do not require restriction enzymes such as DNase Hi-C. In practice, this workflow was successfully applied to many data-sets including dilution Hi-C, in situ Hi-C, DNase Hi-C, Micro-C, capture-C, capture Hi-C or HiChip data.",
+    "homepage": "https://nf-co.re/hic",
+    "biotoolsID": "nf-core-hic",    
+    "version": [
+        "1.0.0",
+        "1.1.0",
+        "1.2.0",
+        "1.2.1",
+        "1.2.2"                       
+    ],
+    "otherID": [
+        {
+            "type": "doi",
+            "version": "1.2.2",
+            "value": "DOI:10.5281/zenodo.4013214"
+        }
+    ],    
+    "function": [
+        {
+            "operation": [
+                {
+                    "term": "DNA structure prediction",
+                    "uri": "http://edamontology.org/operation_2442"
+                }                
+            ],
+            "input": [
+                {
+                    
+                    "data": {
+                    "term": "DNA sequence",
+                    "uri": "http://edamontology.org/data_3494"
+                    },
+                    "format": [
+                        {
+                            "uri": "http://edamontology.org/format_1930",
+                            "term": "FASTQ"
+                        }
+                    ]
+                }
+            ],
+            "note": "Output data type: Intra et inter-chromosomal contact maps.\nOutput data format: Text Hi-C matrices"
+        }
+    ],
+    "toolType": [
+        "Command-line tool",
+        "Workflow"
+    ],
+    "topic": [
+        {
+            "uri": "http://edamontology.org/topic_0622",
+            "term": "Genomics"
+        },       
+        {
+            "uri": "http://edamontology.org/topic_0769",
+            "term": "Workflows"
+        }
+    ],
+    "operatingSystem": [
+        "Linux"
+    ],
+    "language": [
+        "Groovy"
+    ],
+    "license": "MIT",
+    "collectionID": [
+        "nf-core",
+        "RIS3CAT VEIS"
+    ],
+    "maturity": "Mature",
+    "cost": "Free of charge",
+    "accessibility": "Open access",    
+    "link": [
+        {
+            "url": "https://github.com/nf-core/hic",
+            "type": [
+                "Repository"
+            ],
+            "note": "Github Repository"
+        },
+        {
+            "url": "https://nfcore.slack.com/channels/hic",
+            "type": [
+                "Social media"
+            ],
+            "note": "Slack channel"
+        }
+    ],
+    "download": [
+        {
+            "url": "https://github.com/nf-core/hic/releases/tag/1.2.2",
+            "type": "Source code",
+            "note": "Release 1.2.2",
+            "version": "1.2.2"
+        }
+    ],
+    "documentation": [
+        {
+            "url": "https://nf-co.re/hic",
+            "type": [
+                "General"
+            ]
+        },
+        {
+            "url": "https://nf-co.re/hic/usage",
+            "type": [
+                "User manual"
+            ]
+        },
+        {
+            "url": "https://github.com/nf-core/hic/blob/master/LICENSE",
+            "type": [
+                "Terms of use"
+            ]
+        }
+    ],
+    "publication": [
+        {
+          "doi": "10.1038/s41587-020-0439-x",
+          "type": [
+            "Primary"
+          ],
+          "note": "nf-core framework publication",          
+          "pmid": "32055031"
+        }
+    ],
+    "credit": [ 
+        {
+            "name": "Nicolas Servant",            
+            "orcidid": "https://orcid.org/0000-0003-1678-7410",            
+            "typeEntity": "Person",
+            "typeRole": [
+                "Primary contact",
+                "Developer",
+                "Maintainer"
+            ]
+        },        
+        {
+            "name": "Philip A. Ewels",
+            "email": "phil.ewels@scilifelab.se",
+            "url": "https://phil.ewels.co.uk/",
+            "orcidid": "https://orcid.org/0000-0003-4101-2502",            
+            "typeEntity": "Person",
+            "typeRole": [
+                "Primary contact"                
+            ]
+        },                                      
+        {
+            "name": "Maxime U. Garcia",
+            "email": "maxime.garcia@scilifelab.se",
+            "url": "https://maxulysse.github.io/",
+            "orcidid": "https://orcid.org/0000-0003-2827-9261",            
+            "typeEntity": "Person",
+            "typeRole": [
+                "Primary contact"
+            ]
+        },
+        {
+            "orcidid": "https://orcid.org/0000-0002-1541-042X",
+            "name": "Jose Espinosa-Carrasco",
+            "email": "joseantonio.espinosa@crg.eu",
+            "typeEntity": "Person",
+            "typeRole": [
+              "Primary contact"
+            ]
+        },    
+        {
+            "name": "nf-core",            
+            "url": "https://nf-co.re",            
+            "typeEntity": "Consortium"
+        }
+    ],    
+    "owner": "nf-core", 
+    "editPermission": {
+        "type": "group",
+        "authors": [
+            "nf-core",
+            "MaxUlysse",               
+            "JoseEspinosa",
+            "ewels"
+        ]
+    },
+    "validated": 0,
+    "homepage_status": 0,
+    "elixir_badge": 0
+}
