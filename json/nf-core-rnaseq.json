@@ -32,16 +32,24 @@
                     "term": "RNA-Seq quantification",
                     "uri": "http://edamontology.org/operation_3800"
                 },
+                {
+                    "term": "Expression analysis",
+                    "uri": "http://edamontology.org/operation_2495"
+                },
                 {                    
                     "term": "Sample comparison",
                     "uri": "http://edamontology.org/operation_3731"
+                },
+                {
+                    "term": "Differential gene expression profiling",
+                    "uri": "http://edamontology.org/operation_3223"
                 }
             ],
             "input": [
                 {
                     "data": {
-                        "term": "RNA sequence",
-                        "uri": "http://edamontology.org/data_3495"                        
+                        "term": "DNA sequence",
+                        "uri": "http://edamontology.org/data_3494"
                     },
                     "format": [
                         {   
@@ -100,7 +108,7 @@
         {
             "term": "Transcriptomics",
             "uri": "http://edamontology.org/topic_3308"
-        },  
+        },        
         {
             "uri": "http://edamontology.org/topic_0769",
             "term": "Workflows"

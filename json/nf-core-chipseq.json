@@ -165,7 +165,16 @@
           "pmid": "32055031"
         }
     ],
-    "credit": [        
+    "credit": [
+        {
+            "name": "Chuan Wang",                                               
+            "typeEntity": "Person",
+            "typeRole": [
+                "Primary contact",
+                "Developer",
+                "Maintainer"
+            ]
+        },        
         {
             "name": "Philip A. Ewels",
             "email": "phil.ewels@scilifelab.se",
